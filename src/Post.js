@@ -22,8 +22,6 @@ export default function Post() {
     initialValues: {
       name: "",
       poster: "",
-      trailer: "",
-      rating: "",
       summary: "",
     },
 
@@ -70,30 +68,8 @@ export default function Post() {
         helperText={formik.touched.name && formik.errors.name ? formik.errors.name : null}
 
       />
-      <TextField
-        id="outlined-basic"
-        label="image"
-        variant="outlined"
-        value={formik.values.poster}
-        onChange={formik.handleChange}
-        name="poster"
-        onBlur={formik.handleBlur}
-        error={formik.touched.poster && formik.errors.poster}
-        helperText={formik.touched.poster && formik.errors.poster ? formik.errors.poster : null}
-
-      />
-      <TextField
-        id="outlined-basic"
-        label="Name"
-        variant="outlined"
-        value={formik.values.trailer}
-        onChange={formik.handleChange}
-        name="trailer"
-        onBlur={formik.handleBlur}
-        error={formik.touched.trailer && formik.errors.trailer}
-        helperText={formik.touched.trailer && formik.errors.trailer ? formik.errors.trailer : null}
-
-      />
+      
+      
       <TextField
         id="outlined-basic"
         label="Email"
